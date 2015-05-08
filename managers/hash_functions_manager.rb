@@ -2,7 +2,7 @@
 # This manager is responsible for generating storing and retreiving hash functions
 # The manager will store hash functions objects in simple array
 
-require './utils/hash_function'
+require_relative '../utils/hash_function'
 
 class HashFunctionsManager
 
@@ -17,6 +17,12 @@ class HashFunctionsManager
 		functions_number.times {
 			@hash_functions <<  (HashFunction.new denominator , rand(100) , rand(1000))
 		}
+	end
+
+	# Add Hash function to our manager
+	# @param hash_function : object of HashFunction class
+	def add_function(hash_function)
+		@hash_functions << hash_function
 	end
 
     # @param index : the function index to return

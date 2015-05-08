@@ -1,0 +1,6 @@
+require_relative '../engine/min_hash_signature'
+require_relative '../engine/recommendation_engine'
+require_relative '../managers/sets_manager'
+require_relative '../managers/hash_functions_manager'
+require_relative '../utils/file_parser'
+require_relative '../utils/hash_function'

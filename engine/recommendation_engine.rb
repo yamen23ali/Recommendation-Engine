@@ -1,10 +1,10 @@
 # An object of this class will manage the whole idea of recommendation system
 # It will basically just glue all the parts of the system together 
 
-require './managers/sets_manager'
-require './managers/hash_functions_manager'
-require './engine/min_hash_signature'
-require './utils/file_parser'
+require_relative '../managers/sets_manager'
+require_relative '../managers/hash_functions_manager'
+require_relative '../engine/min_hash_signature'
+require_relative '../utils/file_parser'
 
 class RecommendationEngine
   

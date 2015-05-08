@@ -55,4 +55,17 @@ class SetsManager
     @sets[second_set] - @sets[first_set]
   end
 
+  # Return the number of sets in this manager
+  # @return integer
+  def sets_count
+    @sets.count
+  end
+
+  # Check if our manager contaies the reuqested set
+  # @param set_id 
+  # @return True or False
+  def contains?(set_id)
+    @sets.has_key? set_id
+  end
+
 end

@@ -34,7 +34,7 @@ class MinHashSignature
   	    (1..@functions_manager.functions_count).each do|function_number|
 
   	      new_signature = @functions_manager.get_function(function_number).hash(member_number)
-  		  @signatures[id][function_number] = new_signature if new_signature < @signatures[id][function_number]
+  		    @signatures[id][function_number] = new_signature if new_signature < @signatures[id][function_number]
 
   		 end
   	  end

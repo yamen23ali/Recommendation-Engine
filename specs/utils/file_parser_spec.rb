@@ -1,4 +1,4 @@
-require_relative '../../utils/file_parser'
+require_relative '../spec_helper'
 
 describe FileParser do
   

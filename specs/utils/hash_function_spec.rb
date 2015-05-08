@@ -1,6 +1,7 @@
-require_relative '../../utils/hash_function'
+require_relative '../spec_helper'
 
 describe HashFunction do
+  
   it "Gives a correct Hash value" do
   	hash_function = HashFunction.new 5 , 2 , 6
   	x = hash_function.hash(7)
